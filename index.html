@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Aslam Salarzai - Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <div class="">
+  <header class="py-4 bg-white sm:py-5" x-data="{ expanded: false }">
+    <div class="container px-4 mx-auto sm:px-6 lg:px-8">
+        <nav class="flex items-center justify-between">
+            <div class="flex items-center">
+                <a href="#" title="Muhammad Aslam Salarzai">
+                    <img src="https://img.freepik.com/premium-vector/mas-initial-lettering-logo_959352-190.jpg" alt="MAS Logo"
+                         style="width: 150px; height: 150px;" />
+                </a>
+            </div>
+
+            <div class="flex items-center md:hidden">
+                <button @click="expanded = !expanded" :aria-expanded="expanded" class="text-gray-900 focus:outline-none">
+                    <svg x-show="!expanded" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                              d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                    <svg x-show="expanded" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none"
+                         viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#" class="text-base font-semibold text-gray-900 hover:text-gray-700 transition">Home</a>
+                <a href="#about" class="text-base font-semibold text-gray-900 hover:text-gray-700 transition">About Me</a>
+                <a href="#education" class="text-base font-semibold text-gray-900 hover:text-gray-700 transition">Education</a>
+                <a href="#projects" class="text-base font-semibold text-gray-900 hover:text-gray-700 transition">Projects</a>
+                <a href="#contact" class="text-base font-semibold text-gray-900 hover:text-gray-700 transition">Contact Us</a>
+                <a href="/path/to/your/cv.pdf"
+                   class="ml-4 inline-flex items-center px-5 py-2 text-white bg-gray-900 rounded-lg text-sm font-semibold hover:bg-gray-700 transition"
+                   download>
+                    Download CV
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+    <section class="pt-12 bg-gradient-to-b from-gray-50 via-white to-gray-50">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="grid max-w-md grid-cols-1 mx-auto lg:grid-cols-12 gap-x-6 gap-y-8 lg:max-w-none">
+                <div class="self-center lg:col-span-4">
+                    <h1 class="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl">Hey 👋 I am Muhammad Aslam Salarzai, a MERN Stack Developer.</h1>
+                    <p class="mt-5 text-base font-normal leading-7 text-gray-500">Dedicated to harnessing the power of technology to create meaningful and positive change.</p>
+                    <div class="relative inline-flex mt-9 group">
+                        <div class="absolute transitiona-all duration-1000 opacity-70 inset-0 bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg filter group-hover:opacity-100 group-hover:duration-200"></div>
+
+                        <a
+                            href="#projects"
+                            title=""
+                            class="relative inline-flex items-center justify-center px-8 py-3 sm:text-sm sm:py-3.5 text-base font-semibold text-white transition-all duration-200 bg-indigo-600 border border-transparent rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600"
+                            role="button"
+                        >
+                            View My Projects
+                        </a>
+                    </div>
+                </div>
+
+                <div class="self-end lg:order-last lg:pb-20 lg:col-span-3">
+                    <p class="text-xs font-bold tracking-widest text-gray-500 uppercase">⚡️ Latest Project</p>
+
+                    <div class="mt-6 space-y-6 lg:space-y-8">
+                        <div class="relative overflow-hidden">
+                            <div class="flex items-start lg:items-center">
+                                <img class="object-cover w-12 h-12 rounded-lg shrink-0" src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="AI Recipe Generator" />
+                                <p class="ml-5 text-base font-bold leading-6 text-gray-900">
+                                    <a href="#" title="">
+                                        Chef-Claude: AI-powered recipe generator
+                                        <span class="absolute inset-0" aria-hidden="true"></span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <div class="flex items-start lg:items-center">
+                                <img class="object-cover w-12 h-12 rounded-lg shrink-0" src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Weather Monitoring App" />
+                                <p class="ml-5 text-base font-bold leading-6 text-gray-900">
+                                    <a href="#" title="">
+                                        Real-time Weather Monitoring App
+                                        <span class="absolute inset-0" aria-hidden="true"></span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="relative overflow-hidden">
+                            <div class="flex items-start lg:items-center">
+                                <img class="object-cover w-12 h-12 rounded-lg shrink-0" src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Portal UI" />
+                                <p class="ml-5 text-base font-bold leading-6 text-gray-900">
+                                    <a href="#" title="">
+                                        Student Portal UI (Figma Implementation)
+                                        <span class="absolute inset-0" aria-hidden="true"></span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="self-end lg:col-span-5">
+                    <img class="w-full mx-auto" src="https://lh3.googleusercontent.com/a/ACg8ocJxGOWQYtJKq556u6j86K6bUr5dboe2p5GDsIH4OUhuzuSvhQ6X=s288-c-no" alt="Muhammad Aslam Salarzai" style="border-radius: 50%; height: 300px; width: 300px; object-fit: cover;" />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+<div class="relative bg-gray-50">
+    <div class="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
+        <img class="w-auto h-full" src="https://d33wubrfki0l68.cloudfront.net/1e0fc04f38f5896d10ff66824a62e466839567f8/699b5/images/hero/3/background-pattern.png" alt="" />
+    </div>
+
+    <header class="relative py-4 md:py-6">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between">
+
+
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="relative py-12 sm:py-16 lg:pt-20 lg:pb-36">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="grid grid-cols-1 gap-y-8 lg:items-center lg:grid-cols-2 sm:gap-y-20 xl:grid-cols-5">
+                <div class="text-center xl:col-span-2 lg:text-left md:px-16 lg:px-0">
+                    <div class="max-w-sm mx-auto sm:max-w-md md:max-w-full">
+                        <h1 class="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">About Me</h1>
+                        <p class="mt-4 text-lg text-gray-900 lg:mt-6 font-pj">I'm a passionate MERN stack developer dedicated to building robust and scalable web applications. With a strong foundation in MongoDB, Express.js, React.js, and Node.js, I strive to create efficient and user-friendly solutions. My goal is to leverage technology to solve real-world problems and contribute to innovative projects.</p>
+
+                        <div class="mt-8 lg:mt-12 lg:flex lg:items-center">
+                            <p class="mt-4 text-lg text-gray-900 lg:mt-0 font-pj">Check out my skills below and some of my latest projects!</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 sm:flex sm:items-center sm:justify-center lg:justify-start sm:space-x-5 lg:mt-12">
+                        <a
+                            href="#skills"
+                            title=""
+                            class="inline-flex items-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 font-pj justif-center hover:bg-gray-600"
+                            role="button"
+                        >
+                            My Skills
+                        </a>
+
+                        <a
+                            href="#projects"
+                            title=""
+                            class="inline-flex items-center px-4 py-4 mt-4 text-lg font-bold transition-all duration-200 bg-transparent border border-transparent sm:mt-0 font-pj justif-center rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300 hover:bg-gray-200 focus:bg-gray-200"
+                            role="button"
+                        >
+                            <svg class="w-5 h-5 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            </svg>
+                            View Projects
+                        </a>
+                    </div>
+                </div>
+
+                <div class="xl:col-span-3">
+                    <img class="w-full mx-auto scale-110" src="https://d33wubrfki0l68.cloudfront.net/29c501c64b21014b3f2e225abe02fe31fd8f3a5c/f866d/images/hero/3/illustration.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section id="education" class="py-12 bg-white sm:py-16 lg:py-20">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj">Education</h2>
+            <p class="mt-4 text-base leading-7 text-gray-600 sm:mt-8 font-pj">Details about my academic background and qualifications.</p>
+            <div class="mt-8 text-left">
+                <p class="text-lg font-semibold text-gray-900">Your Degree Name</p>
+                <p class="text-base text-gray-600">Your University/Institution, City</p>
+                <p class="text-sm text-gray-500">Graduation Year</p>
+                <ul class="list-disc list-inside mt-2 text-gray-600">
+                    <li>Relevant coursework or achievements</li>
+                    <li>Another relevant detail</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+---
+
+<section id="skills" class="py-12 bg-white sm:py-16 lg:py-20">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj">My Skills</h2>
+            <p class="mt-4 text-base leading-7 text-gray-600 sm:mt-8 font-pj">Here are some of the technologies I'm proficient in.</p>
+        </div>
+
+        <div class="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
+            <div class="md:p-8 lg:p-14">
+                <svg class="mx-auto" width="46" height="46" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM11 15H13V17H11V15ZM11 7H13V13H11V7Z" fill="#161616"/>
+                </svg>
+                <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">MongoDB</h3>
+                <p class="mt-5 text-base text-gray-600 font-pj">Experience with NoSQL databases, data modeling, and Mongoose ODM.</p>
+            </div>
+
+            <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200">
+                <svg class="mx-auto" width="46" height="46" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2ZM12 17L4 13V8L12 12L20 8V13L12 17Z" fill="#161616"/>
+                </svg>
+                <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Express.js</h3>
+                <p class="mt-5 text-base text-gray-600 font-pj">Building RESTful APIs, middleware, and server-side logic.</p>
+            </div>
+
+            <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200">
+                <svg class="mx-auto" width="42" height="42" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 17L17 12L12 7V17Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 12L12 7L17 12L12 17L7 12Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">React.js</h3>
+                <p class="mt-5 text-base text-gray-600 font-pj">Creating dynamic and interactive user interfaces with functional components and hooks.</p>
+            </div>
+
+            <div class="md:p-8 lg:p-14 md:border-t md:border-gray-200">
+                <svg class="mx-auto" width="42" height="42" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2Z" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 6.5V17.5M6.5 12H17.5" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Node.js</h3>
+                <p class="mt-5 text-base text-gray-600 font-pj">Server-side development, package management, and asynchronous programming.</p>
+            </div>
+
+            <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t">
+                <svg class="mx-auto" width="46" height="42" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 17V7M8.5 10.5L12 7L15.5 10.5" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">JavaScript</h3>
+                <p class="mt-5 text-base text-gray-600 font-pj">Proficient in modern JavaScript (ES6+), asynchronous operations, and DOM manipulation.</p>
+            </div>
+
+            <div class="md:p-8 lg:p-14 md:border-l md:border-gray-200 md:border-t">
+                <svg class="mx-auto" width="44" height="44" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" fill="#D4D4D8" stroke="#161616" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <h3 class="mt-12 text-xl font-bold text-gray-900 font-pj">Tailwind CSS</h3>
+                <p class="mt-5 text-base text-gray-600 font-pj">Rapidly building modern designs with utility-first CSS framework.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+---
+
+<section id="projects" class="py-12 bg-gray-50 sm:py-16 lg:py-20">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center">
+            <div class="text-center">
+                <h2 class="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">My Projects</h2>
+                <p class="text-lg font-medium text-gray-600 font-pj">Some of the exciting projects I've worked on.</p>
+            </div>
+
+            <div class="relative mt-10 md:mt-24 md:order-2">
+                <div class="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
+                    <div class="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter" style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"></div>
+                </div>
+
+                <div class="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
+                    <div class="flex flex-col overflow-hidden shadow-xl">
+                        <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                            <div class="flex-1">
+                                <img class="w-full h-48 object-cover rounded-lg mb-4" src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="AI Recipe Generator Project" />
+                                <h3 class="text-xl font-bold text-gray-900 font-pj mb-2">Chef-Claude: AI-powered recipe generator</h3>
+                                <p class="text-base leading-relaxed text-gray-600 font-pj">An AI-powered recipe generator that helps users discover new recipes based on available ingredients and dietary preferences.</p>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <a href="#" title="" class="text-sm font-semibold text-indigo-600 hover:text-indigo-800">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col overflow-hidden shadow-xl">
+                        <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                            <div class="flex-1">
+                                <img class="w-full h-48 object-cover rounded-lg mb-4" src="https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Weather App Project" />
+                                <h3 class="text-xl font-bold text-gray-900 font-pj mb-2">Real-time Weather Monitoring App</h3>
+                                <p class="text-base leading-relaxed text-gray-600 font-pj">A web application providing real-time weather updates and forecasts for various locations.</p>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <a href="#" title="" class="text-sm font-semibold text-indigo-600 hover:text-indigo-800">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col overflow-hidden shadow-xl">
+                        <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
+                            <div class="flex-1">
+                                <img class="w-full h-48 object-cover rounded-lg mb-4" src="https://images.pexels.com/photos/3861959/pexels-photo-3861959.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student Portal UI Project" />
+                                <h3 class="text-xl font-bold text-gray-900 font-pj mb-2">Student Portal UI (Figma Implementation)</h3>
+                                <p class="text-base leading-relaxed text-gray-600 font-pj">A frontend implementation of a student portal user interface, designed in Figma.</p>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <a href="#" title="" class="text-sm font-semibold text-indigo-600 hover:text-indigo-800">View Project &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+---
+
+<section id="contact" class="py-12 bg-white sm:py-16 lg:py-20">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold leading-tight text-gray-900 sm:text-4xl xl:text-5xl font-pj">Get in Touch</h2>
+            <p class="mt-4 text-base leading-7 text-gray-600 sm:mt-8 font-pj">Feel free to reach out for collaborations, projects, or just a chat!</p>
+        </div>
+
+        <div class="mt-10 max-w-lg mx-auto sm:mt-16 lg:mt-24">
+            <form action="#" method="POST" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                    <div class="mt-1">
+                        <input type="text" name="name" id="name" autocomplete="name" required class="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md py-2 px-3">
+                    </div>
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                    <div class="mt-1">
+                        <input type="email" name="email" id="email" autocomplete="email" required class="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md py-2 px-3">
+                    </div>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                    <div class="mt-1">
+                        <textarea id="message" name="message" rows="4" required class="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md py-2 px-3"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button type="submit" class="inline-flex justify-center py-3 px-6 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="py-10 bg-gray-50 sm:pt-16 lg:pt-24">
+    <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-y-16 gap-x-12">
+            <div class="col-span-2 md:col-span-3 lg:col-span-2 lg:pr-8">
+                <img src="https://img.freepik.com/premium-vector/mas-initial-lettering-logo_959352-190.jpg" alt="MAS Logo"
+                         style="width: 150px; height: 150px;" /> 
+
+                <p class="mt-7 text-base leading-relaxed text-gray-600">I'm a passionate [Your Profession, e.g., Web Developer, UI/UX Designer] creating engaging and effective digital experiences. Let's build something great together!</p>
+
+                <ul class="mt-9 flex items-center space-x-3">
+                    <li>
+                        <a href="#" title="Link to your Twitter" target="_blank" rel="noopener noreferrer" class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 text-white transition-all duration-200 hover:bg-blue-600 focus:bg-blue-600">
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" title="Link to your LinkedIn" target="_blank" rel="noopener noreferrer" class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 text-white transition-all duration-200 hover:bg-blue-600 focus:bg-blue-600">
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" title="Link to your GitHub" target="_blank" rel="noopener noreferrer" class="flex h-7 w-7 items-center justify-center rounded-full bg-gray-800 text-white transition-all duration-200 hover:bg-blue-600 focus:bg-blue-600">
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Explore</p>
+                <ul class="mt-6 space-y-4">
+                    <li>
+                        <a href="#projects" title="View my projects" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Projects </a>
+                    </li>
+                    <li>
+                        <a href="#skills" title="See my skills" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Skills </a>
+                    </li>
+                    <li>
+                        <a href="#about" title="Learn more about me" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> About Me </a>
+                    </li>
+                    <li>
+                        <a href="#contact" title="Get in touch" class="flex text-base text-black transition-all duration-200 hover:text-blue-600 focus:text-blue-600"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-span-2 md:col-span-1 lg:col-span-2 lg:pl-8">
+                <p class="text-sm font-semibold tracking-widest text-gray-400 uppercase">Stay Connected</p>
+                <p class="mt-6 text-base leading-relaxed text-gray-600">I occasionally share updates and new work. Feel free to connect!</p>
+                <a href="#contact" title="Get in touch with me" class="inline-flex items-center justify-center px-6 py-4 mt-6 font-semibold text-white transition-all duration-200 bg-blue-600 rounded-md hover:bg-blue-700 focus:bg-blue-700">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+
+        <hr class="mb-10 mt-16 border-gray-200" />
+
+        <p class="text-center text-sm text-gray-600">© Copyright 2024, [Your Name]. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
