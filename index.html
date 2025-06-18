@@ -5,50 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammad Aslam Salarzai - Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 </head>
 <body>
 
     <div class="">
-  <header class="py-4 bg-white sm:py-5" x-data="{ expanded: false }">
-    <div class="container px-4 mx-auto sm:px-6 lg:px-8">
-        <nav class="flex items-center justify-between">
-            <div class="flex items-center">
-                <a href="#" title="Muhammad Aslam Salarzai">
-                    <img src="https://img.freepik.com/premium-vector/mas-initial-lettering-logo_959352-190.jpg" alt="MAS Logo"
-                                 style="width: 150px; height: 150px;" />
-                </a>
-            </div>
+ 
+        <header class="py-4 bg-white sm:py-5" x-data="{ expanded: false }">
+  <div class="container px-4 mx-auto sm:px-6 lg:px-8">
+    <nav class="flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a href="#" title="Muhammad Aslam Salarzai">
+          <img src="https://img.freepik.com/premium-vector/mas-initial-lettering-logo_959352-190.jpg" alt="MAS Logo"
+               style="width: 150px; height: 150px;" />
+        </a>
+      </div>
 
-            <div class="flex items-center md:hidden">
-                <button @click="expanded = !expanded" :aria-expanded="expanded" class="text-gray-900 focus:outline-none">
-                    <svg x-show="!expanded" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                 viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                  d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                    <svg x-show="expanded" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                 viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
+      <!-- Mobile Toggle -->
+      <div class="flex items-center md:hidden">
+        <button @click="expanded = !expanded" :aria-expanded="expanded" class="text-gray-900 focus:outline-none">
+          <!-- Hamburger Icon -->
+          <svg x-show="!expanded" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                  d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- Close Icon -->
+          <svg x-show="expanded" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
 
-            <div class="hidden md:flex items-center space-x-6">
-                <a href="#" class="text-base font-semibold text-gray-900 hover:text-gray-700 transition">Home</a>
-                <a href="#about" class="text-base font-semibold text-gray-900 hover:text-gray-700 transition">About Me</a>
-                <a href="#education" class="text-base font-semibold text-gray-900 hover:text-gray-700 transition">Education</a>
-                <a href="#projects" class="text-base font-semibold text-gray-900 hover:text-gray-700 transition">Projects</a>
-                <a href="#contact" class="text-base font-semibold text-gray-900 hover:text-gray-700 transition">Contact Us</a>
-                <a href="https://drive.google.com/file/d/1idk0D6nnU28H_tFITPklrY2XOWc8E72h/view?pli=1"
-                   class="ml-4 inline-flex items-center px-5 py-2 text-white bg-gray-900 rounded-lg text-sm font-semibold hover:bg-gray-700 transition"
-                   download target="_blank" rel="noopener noreferrer">
-                    Download CV
-                </a>
-            </div>
-        </nav>
-    </div>
-</header>
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#" class="text-base font-semibold text-gray-900 hover:text-gray-700 t
+
 
 
     <section class="pt-12 bg-gradient-to-b from-gray-50 via-white to-gray-50">
